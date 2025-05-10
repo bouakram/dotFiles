@@ -1,0 +1,19 @@
+# some aliases
+alias bat='batcat'
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+alias v='nvim'
+alias fv='nvim $(fzf -m --preview="batcat --color=always {}")'
+alias md='mkdir'
+alias rmf='rm -rf'
+
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+
+# fzf
+FZF_ALT_C_COMMAND= eval "$(fzf --bash)"
+
+#Android studio config
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
