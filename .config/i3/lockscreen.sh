@@ -1,11 +1,11 @@
 #!/bin/sh
 
 BLANK='#00000000'
-CLEAR='#6c708622'           # Overlay0 with some transparency
-DEFAULT='#313244cc'         # Surface0
-TEXT='#cdd6f4cc'            # Text
-WRONG='#f38ba8cc'           # Red
-VERIFYING='#94e2d5cc'       # Teal
+CLEAR='#6c708622'         # Overlay0 with some transparency
+DEFAULT='#313244'         # Surface0
+TEXT='#cdd6f4'            # Text
+WRONG='#ff6e5e'           # Red
+VERIFYING='#5eff6c'       # Teal
 
 i3lock \
 --insidever-color=$CLEAR     \
