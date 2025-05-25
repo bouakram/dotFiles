@@ -104,4 +104,4 @@ configuration {
     }
 }
 
-@theme "/theme/floating.rasi"
+@theme "launcher/floating.rasi"

@@ -94,6 +94,9 @@ vim.keymap.set("n", "<Leader>z", "<cmd>wq<CR>")
 -- lazy
 vim.keymap.set("n", "<leader>l", ":Lazy<cr>", { desc = "Lazy" })
 
+-- Mason
+vim.keymap.set("n", "<leader>m", ":Mason<cr>", { desc = "Lazy" })
+
 -- Press 'S' for quick find/replace for the word under the cursor
 vim.keymap.set("n", "S", function()
   local cmd = ":%s/<C-r><C-w>/<C-r><C-w>/gI<Left><Left><Left>"

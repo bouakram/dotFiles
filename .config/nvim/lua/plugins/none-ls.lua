@@ -57,7 +57,7 @@ return {
         null_ls.builtins.diagnostics.markdownlint,
         null_ls.builtins.diagnostics.pylint,
         null_ls.builtins.diagnostics.spectral,
-        null_ls.builtins.diagnostics.solhint,
+        -- null_ls.builtins.diagnostics.solhint,
         null_ls.builtins.diagnostics.hadolint,
         null_ls.builtins.diagnostics.stylelint,
         --null_ls.builtins.diagnostics.eslint,

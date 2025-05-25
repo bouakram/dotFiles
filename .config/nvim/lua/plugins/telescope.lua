@@ -19,7 +19,7 @@ return {
     vim.keymap.set(
       "n",
       "<leader>fg",
-      "<cmd>lua require('telescope.builtin').live_grep()<CR>",
+      "<cmd>lua require('telescope.builtin').live_grep({prompt_prefix = '🔍' })<CR>",
       {}
     )
     vim.keymap.set(
@@ -29,4 +29,36 @@ return {
       {}
     )
   end,
+  -- {
+  -- "nvim-telescope/telescope-ui-select.nvim",
+  -- dependencies = { "nvim-telescope/telescope.nvim" },
+  -- config = function()
+  --   require("telescope").setup({
+  --     extensions = {
+  --       ["ui-select"] = {
+  --         require("telescope.themes").get_dropdown()
+  --       },
+  --     },
+  --   })
+  --   require("telescope").load_extension("ui-select")
+  --   vim.keymap.set(
+  --     "n",
+  --     "<leader>ff",
+  --     "<cmd>lua require('telescope.builtin').find_files({ find_command = {'rg', '--ignore', '--hidden', '--files'}, prompt_prefix = '🔍' })<CR>",
+  --     { noremap = true, silent = true }
+  --   )
+  --   vim.keymap.set(
+  --     "n",
+  --     "<leader>fg",
+  --     "<cmd>lua require('telescope.builtin').live_grep({prompt_prefix = '🔍' })<CR>",
+  --     {}
+  --   )
+  --   vim.keymap.set(
+  --     "n",
+  --     "<leader>fh",
+  --     "<cmd>lua require('telescope.builtin').help_tags()<CR>",
+  --     {}
+  --   )
+  -- end,
+  -- },
 }
